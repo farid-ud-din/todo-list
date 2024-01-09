@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background: linear-gradient(270deg, rgba(255, 185, 185, 0), black),
+    url("./images/back.jpg");
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #b59a75;
+}
+
+.hero-title1 {
+  font-family: "Cookie", cursive;
+  margin: 0;
+  padding: 0;
+  font-size: 75px;
+  color: #d4b180;
+  text-shadow: 0px -2px 4px #67420e;
+}
+
+.todo-app {
+  backdrop-filter: blur(1px) saturate(0%);
+  -webkit-backdrop-filter: blur(1px) saturate(0%);
+  background-color: rgba(37, 25, 5, 0.69);
+  border-radius: 12px;
+  border: 2px solid #31220d;
+  min-height: 500px;
+}
+
+.note-icon {
+  width: 12%;
+}
+
+.input-field {
+  background-color: #b59a75;
+}
+
+#text {
+  flex: 1;
+  outline: none;
+  background-color: #b59a75;
+  color: #5a401c;
+}
+
+::placeholder {
+  color: #5a401c;
+}
+
+.btn {
+  background: #412c11;
+  color: #b59a75;
+  border: 2px solid #b59a75;
+}
+
+.btn:hover {
+  background: #5a401c;
+  color: #b59a75;
+  border: 2px solid #b59a75;
+}
+
+.btn:focus {
+  background: #67420e;
+  color: #b59a75;
+  border: 2px solid #b59a75;
+}
+
+.btn:active {
+  background: #67420e;
+  color: #b59a75;
+  border: 2px solid #b59a75;
+}
+
+ul li {
+  font-size: 17px;
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 12px 8px 12px 50px;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  background-image: url(./images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 14px;
+  left: 15px;
+}
+
+ul li.checked {
+  color: #d4b180;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(./images/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  text-align: center;
+  color: #b59a75;
+}
+
+ul li span:hover {
+  background: #b59a75;
+  color: #412c11;
+  border-radius: 50px;
+}
+
+.reference {
+  color: #b59a75;
+  text-decoration: underline;
+}
+
+.ref-title {
+  text-shadow: 2px 2px 6px black;
+}
